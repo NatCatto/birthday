@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #d2a1ac;
+            overflow: hidden; /* Prevents scrollbars due to the background */
+            background: url('https://i.gifer.com/43MW.gif') center center fixed; /* Set the GIF as the background */
+            background-size: cover; /* Cover the entire viewport */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #card {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffd4df;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #806a70;
+            font-family:'Brush Script' ; sans-serif
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+            font-family: 'Calluna'; sans-serif
+        }
+    </style>
+</head>
+<body>
+
+<div id="card">
+    <h1>Happy Birthday Mi Amor!</h1>
+    <p>Dear Jbr,</p>
+    <p>Wishing you a fantastic birthday! May your day be filled with love, happiness, and wonderful moments. Eat lots of cake and enjoy every moment!</p>
+    <p>Until we're together, much love <3</p>
+    <p>Neha</p>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hearts Example</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            position: relative;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .heart-gif {
+            position: absolute;
+            bottom: 200px;
+            right: 330px;
+            width: 170px; /* Adjust the size as needed */
+            height: auto;
+        } 
+        
+    </style>
+</head>
+<body>
+
+    <h1> <img class="heart-gif" src="https://i.gifer.com/6mz.gif" alt="https://images.app.goo.gl/vWe4xFB6sQD5jtmw8"></h1>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Bouquet Example</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            overflow: hidden; /* Prevents scrollbars due to the background */
+            background: url('https://i.gifer.com/43MW.gif') center center fixed; /* Set the background image */
+            background-size: cover; /* Cover the entire viewport */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: purple; /* Text color, adjust as needed */
+            height: 100vh; /* Set the height to 100% of the viewport */
+        }
+
+        .popup-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .popup-button {
+            cursor: pointer;
+            position: absolute;
+            right: 555px;
+            bottom: 220px;
+            padding: 10px 20px;
+            background-color: #e44d26;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    .popup-gif {
+            width: 100%; /* Make the GIF fill the container */
+            border-radius: 10px; /* Add rounded corners to the image */
+        }
+    </style>
+</head>
+<body>
+
+    <button class="popup-button" onclick="togglePopup()">Surprise :3</button>
+
+    <div class="popup-container" id="popup">
+        <h2>🌸 KISSIES! 🌸</h2>
+        <img class="popup-gif" src="https://gifdb.com/images/high/anime-love-nyaruko-kyc6y92mklmbwgf5.gif" alt="Bouquet GIF">
+        <p>So many kissies for you birthday boi!</p>
+        <button onclick="togglePopup()">Dnt go :(</button>
+    </div>
+
+    <script>
+        function togglePopup() {
+            var popup = document.getElementById('popup');
+            popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Example</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        audio {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <audio controls autoplay id="audioPlayer">
+        <source src="Good_Morning_to_All(chosic.com).mp3" type="audio/mp3">
+        
+    </audio>
+
+</body>
+</html>
+
